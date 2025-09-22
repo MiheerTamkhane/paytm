@@ -1,12 +1,12 @@
-import { Button } from "@repo/ui/button";
+"use client"
+import { signIn, signOut, useSession } from "next-auth/react";
+import { Appbar } from "@repo/ui/appbar";
 
-export default function Home() {
+export default function Page(): JSX.Element {
+  const session = useSession();
   return (
-    <div>
-      <main>
-        <h1>Welcome to the User App</h1>
-        <Button className="bg-blue-500 text-white" appName='paytm-app'>Get Started</Button>
-      </main>
-    </div>
+   <div>
+      <Appbar onSignin={signIn} onSignout={signOut} user={session.data?.user} />
+   </div>
   );
 }
