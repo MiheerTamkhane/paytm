@@ -79,3 +79,14 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+
+### How to Docker
+ - How to check the containers you are running locally.
+```
+docker ps
+```
+ - How to enter into the container you are running on docker.
+```
+docker exec -it [container id] /bin/bash
+```
