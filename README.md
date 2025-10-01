@@ -90,3 +90,12 @@ docker ps
 ```
 docker exec -it [container id] /bin/bash
 ```
+
+## Run below commands in prisma for everytime you update the prisma.schema
+```
+npx prisma migrate --dev
+```
+&
+```
+npx prisma generate
+```
