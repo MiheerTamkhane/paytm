@@ -89,6 +89,7 @@ docker ps
  - How to enter into the container you are running on docker.
 ```
 docker exec -it [container id] /bin/bash
+psql -U postgres
 ```
 
 ## Run below commands in prisma for everytime you update the prisma.schema
